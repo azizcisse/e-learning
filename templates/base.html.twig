@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>
+			{% block title %}Welcome!
+			{% endblock %}
+		</title>
+		{# Run `composer require symfony/webpack-encore-bundle`
+																								           and uncomment the following Encore helpers to start using Symfony UX #}
+		{% block stylesheets %}
+			<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+			{#{{ encore_entry_link_tags('app') }}#}
+			<!-- Favicons -->
+			<link href="{{asset('assets/img/favicon.png')}}" rel="icon"> <link
+			href="{{asset('assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
+
+			<!-- Google Fonts -->
+			<link
+			href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+			<!-- Vendor CSS Files -->
+			<link href="{{asset('assets/vendor/aos/aos.css')}}" rel="stylesheet">
+			<link href="{{asset('assets/vendor/bootstrap/css/bootstrap.min.css')}}" rel="stylesheet">
+			<link href="{{asset('assets/vendor/bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
+			<link href="{{asset('assets/vendor/boxicons/css/boxicons.min.css')}}" rel="stylesheet">
+			<link href="{{asset('assets/vendor/glightbox/css/glightbox.min.css')}}" rel="stylesheet">
+			<link
+			href="{{asset('assets/vendor/swiper/swiper-bundle.min.css')}}" rel="stylesheet">
+
+			<!-- Template Main CSS File -->
+			<link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
+		{% endblock %}
+
+		{% block javascripts %}
+			<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+			{#{{ encore_entry_script_tags('app') }}#}
+			<!-- Vendor JS Files -->
+			<script src="{{asset('assets/vendor/aos/aos.js')}}"></script>
+			<script src="{{asset('assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+			<script src="{{asset('assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
+			<script src="{{asset('assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+			<script src="{{asset('assets/vendor/php-email-form/validate.js')}}"></script>
+			<script src="{{asset('assets/vendor/purecounter/purecounter.js')}}"></script>
+			<script src="{{asset('assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
+
+			<!-- Template Main JS File -->
+			<script src="{{asset('assets/js/main.js')}}"></script>
+		{% endblock %}
+	</head>
+	<body>
+
+		<section id="topbar" class="d-flex align-items-left p-1 mb-0 bg-primary text-white">
+			<div class="container d-flex justify-content-left justify-content-md-between">
+				<div class="contact-info d-flex align-items-left">
+					<i class="bi bi-envelope d-flex align-items-left ">
+						<a class="text-white" href="mailto:contact@example.com ">
+							<h4>essa-dakar@gmail.com</h4>
+						</a>
+					</i>
+					<i class="bi bi-phone d-flex align-items-left ms-4 animated bounce infinite">
+						<span>
+							<h4>(+221) 70 863 01 71</h4>
+						</span>
+					</i>
+				</div>
+			</div>
+			<script async src='https://stackwhats.com/pixel/eb48538a5cfa7625307c438c33d647'></script>
+			<div class="pull-right">
+				<div class="container d-flex justify-content-right justify-content-md-between">
+					<div class="contact-info d-flex align-items-right">
+						<i class="d-flex align-items-right ms-4">
+							<a class="text-white badge bg-secondary" href="/register">
+								<h5>S'inscrire</h5>
+							</a>
+						</i>
+						<i class="d-flex align-items-right ms-4 ">
+							<a class="text-white badge bg-info" href="/login">
+								<h5>Se Connecter</h5>
+							</a>
+						</i>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- ======= Header ======= -->
+		<!-- ======= Header ======= -->
+		<header id="header" class="p-1 header-inner-pages">
+			<div class="container d-flex align-items-center">
+				<h1 class="logo me-auto getstarted">
+					<script type="text/javascript">
+						function blink() {
+var blinks = document.getElementsByTagName('blink');
+for (var i = blinks.length - 1; i >= 0; i--) {
+var s = blinks[i];
+s.style.visibility = (s.style.visibility === 'visible') ? 'hidden' : 'visible';
+}
+window.setTimeout(blink, 1000);
+}
+if (document.addEventListener) 
+document.addEventListener("DOMContentLoaded", blink, false);
+ else if (window.addEventListener) 
+window.addEventListener("load", blink, false);
+ else if (window.attachEvent) 
+window.attachEvent("onload", blink);
+ else 
+window.onload = blink;
+					</script>
+					<blink>
+						<a href="/">E-ESSA<img src="assets/img/logo.jpeg" alt="" class="img-fluid getstarted"></a>
+					</blink>
+				</h1>
+				<nav id="navbar" class="navbar">
+					<ul>
+						<li>
+							<a class="nav-link scrollto active" href="/">Accueil</a>
+						</li>
+						<li class="dropdown">
+							<a href="#">
+								<span>Utilisateurs</span>
+								<i class="bi bi-chevron-down"></i>
+							</a>
+							<ul>
+								<li><a href="#">Etudiants</a></li>
+								<li><a href="#">Formateurs</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#">
+								<span>Cours</span>
+								<i class="bi bi-chevron-down"></i>
+							</a>
+							<ul>
+								<li><a href="/courses">Formations</a></li>
+								<li><a href="#">Médiathèques</a></li>
+							</ul>
+						</li>
+						<li>
+							<a class="nav-link scrollto" href="#contact">Certification</a>
+						</li>
+						<li>
+							<a class="nav-link scrollto" href="#contact">Contact</a>
+						</li>
+					</ul>
+					<i class="bi bi-list mobile-nav-toggle"></i>
+				</nav>
+				<!-- .navbar -->
+			</nav>
+			<!-- .navbar -->
+
+		</div>
+	</body>
+</html></header>{% block body %}{% endblock %}<!-- ======= Footer ======= --><footer id="footer">
+
+<div class="footer-top">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-lg-3 col-md-6 footer-contact">
+				<h3>ESSA</h3>
+				<p>
+					392 SAcre coeur 3
+					<br>
+					Dakar BP 11001<br>
+					Senegal
+					<br><br>
+					<strong>Phone:</strong>
+					+221786357800<br>
+					<strong>Email:</strong>
+					info@example.com<br>
+				</p>
+			</div>
+
+			<div class="col-lg-2 col-md-6 footer-links">
+				<h4>
+					Liens</h4>
+				<ul>
+					<li>
+						<i class="bx bx-chevron-right"></i>
+						<a href="#">Accueil</a>
+					</li>
+					<li>
+						<i class="bx bx-chevron-right"></i>
+						<a href="#">Essa</a>
+					</li>
+					<li>
+						<i class="bx bx-chevron-right"></i>
+						<a href="#">Formation</a>
+					</li>
+					<li>
+						<i class="bx bx-chevron-right"></i>
+						<a href="#">Actualité</a>
+					</li>
+					<li>
+						<i class="bx bx-chevron-right"></i>
+						<a href="#">Contact</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="col-lg-3 col-md-6 footer-links">
+				<h4>Nos Formations</h4>
+				<ul>
+					<li>
+						<i class="bx bx-chevron-right"></i>
+						<a href="#">Web Design</a>
+					</li>
+					<li>
+						<i class="bx bx-chevron-right"></i>
+						<a href="#">Web Development</a>
+					</li>
+					<li>
+						<i class="bx bx-chevron-right"></i>
+						<a href="#">Product Management</a>
+					</li>
+					<li>
+						<i class="bx bx-chevron-right"></i>
+						<a href="#">Marketing</a>
+					</li>
+					<li>
+						<i class="bx bx-chevron-right"></i>
+						<a href="#">Graphic Design</a>
+					</li>
+				</ul>
+			</div>
+
+
+			<div class="col-lg-4 col-md-6 footer-newsletter">
+
+				<h4>Newsletter</h4>
+				<p>Pour tout mis à jour nous vous ferons parvenir un courriel éléctronique</p>
+				<form action="https://www.essa-dakar.com/store/newsletter" method="post">
+					<input type="hidden" name="_token" value="RgBNB8HI4um6Owm4n3RUoWtfuRoZnG5hQcnwK99s">
+					<input type="email" name="email"><input type="submit" value="Inscrivez-Vous" id="save" required>
+
+				</form>
+			</div>
+
+		</div>
+	</div>
+</div>
+
+<div class="container d-md-flex py-4">
+
+	<div class="me-md-auto text-center text-md-start">
+		<div class="copyright">
+			&copy; Copyright
+			<strong>
+				<span>ESSA</span>
+			</strong>. All Rights Reserved
+		</div>
+		<div class="credits">
+			Designed by
+			<a href="https://AZIZ-6C.COM/">AZIZ-6C</a>
+		</div>
+	</div>
+	<div class="social-links text-center text-md-right pt-3 pt-md-0">
+		<a href="#" class="facebook">
+			<i class="bx bxl-facebook"></i>
+		</a>
+		<a href="#" class="instagram">
+			<i class="bx bxl-instagram"></i>
+		</a>
+		<a href="#" class="google-plus">
+			<i class="bx bxl-skype"></i>
+		</a>
+		<a href="#" class="linkedin">
+			<i class="bx bxl-linkedin"></i>
+		</a>
+	</div>
+</div></footer></body></html>

@@ -1,0 +1,354 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!
+{% endblock %}
+
+{% block body %}
+	<!-- ======= Hero Section ======= -->
+	<section id="hero" class="d-flex align-items-center">
+
+		<div class="container-fluid" data-aos="fade-up">
+			<div class="row justify-content-center">
+				<div class="col-xl-5 col-lg-6 pt-3 pt-lg-0 order-2 order-lg-1 d-flex flex-column justify-content-center">
+					<h1>Votre avenir commence ici</h1>
+					<h2>Apprenez à apprendre.<br>
+                        Découvrez les compétences de demain.<br>
+                        Et prenez votre carrière en main.</h2>
+					<div>
+						<a href="https://www.essa-dakar.com/course/details/4" class="btn-get-started scrollto">EN SAVOIR PLUS</a>
+					</div>
+				</div>
+				<div class="col-xl-4 col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="150">
+					<img src="{{asset('assets/img/hero.jpeg')}}" class="img-fluid animated" alt="" width="1000" height="1000">
+				</div>
+			</div>
+		</div>
+
+	</section>
+	<!-- End Hero -->
+
+	<main
+		id="main">
+		<!-- ======= About Section ======= -->
+		<section id="about" class="about">
+			<div class="container" data-aos="fade-up">
+				<div class="section-title">
+					<h2>Qui somme nous?</h2>
+					<!-- <p>Qui somme nous?</p>-->
+				</div>
+
+				<div class="row" style="background-color:white; border-radius: 5px;box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.1);">
+					<div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+						<img src="https://www.essa-dakar.com/image/about/1700229816762740" class="img-fluid rounded " alt="">
+					</div>
+					<div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+						<h3 style="text-align:center;">Ecole Supérieure Des Sciences Appliquées (ESSA)</h3>
+
+						<ul>
+							<li>
+								<i class="bi bi-check-circle"></i>
+								L’École Supérieure des Sciences Appliquées est dirigée par un corps professoral ayant une expérience avérée dans le domaine des Sciences et Technologies. Sept (7) professeurs titulaires des universités du  CAMES constituent l’équipe responsable de l’orientation et de la gestion académique et pédagogique.
+								Les enseignements sont dispensés par des professeurs de rang magistral (Professeurs, Maître de Conférences) et des formateurs expérimentés dans les domaines professionnels et /ou technique.</li>
+						</ul>
+						<ul>
+							<li>
+								<i class="bi bi-check-circle"></i>
+								ESSA est accrédité pour ses formations diplômantes par  l’Autorité Nationale d’Assurance Qualité de l’Enseignement Supérieur (ANAQ-SUP) en 2014 et par le Conseil Africain et  Malgache  pour l’Enseignement Supérieur (CAMES) en 2015.</li>
+						</ul>
+
+
+					</div>
+				</div>
+
+			</div>
+		</section>
+		<!-- End About Section -->
+
+		
+			<!-- ======= Popular Courses Section ======= -->
+		<section id="popular-courses" class="courses">
+			<div class="container" data-aos="fade-up">
+				<div class="section-title">
+					<h2>Etudes</h2>
+					<p>Des formations innovantes</p>
+				</div>
+
+
+				<div class="row" data-aos="zoom-in" data-aos-delay="100">
+
+
+					<div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+						<div class="course-item">
+							<img src="https://openclassrooms.com/modules/sdzv4-main/latest/images/diploma-c44a382d27bb13c21424.svg" class="img-fluid" alt="..." style="width:380px;height:250px;">
+							<div class="course-content">
+								<div class="d-flex justify-content-between align-items-center mb-3">
+									<h4 class="get-started-btn">Licence</h4>
+								</div>
+
+								<h3>
+									<a href="https://www.essa-dakar.com/course/details/21">Diplômes accrédités</a>
+								</h3>
+								<p>Le niveau de nos parcours certifiants est reconnu par l'État français</p>
+								<div class="trainer d-flex justify-content-between align-items-center">
+									<div class="trainer-profile d-flex align-items-center">
+
+										<span>ESSA</span>
+									</div>
+									<div class="trainer-rank d-flex align-items-center">
+										<i class="bx bxs-graduation bx-md"></i>&nbsp;
+											                    &nbsp;&nbsp;
+										<i class="bx bxs-edit-alt bx-md"></i>&nbsp;
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End Course Item-->
+
+
+					<div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+						<div class="course-item">
+							<img src="https://openclassrooms.com/modules/sdzv4-main/latest/images/mentorship-a03db610dfd7669ed433.svg" class="img-fluid" alt="..." style="width:380px;height:250px;">
+							<div class="course-content">
+								<div class="d-flex justify-content-between align-items-center mb-3">
+									<h4 class="get-started-btn">Master</h4>
+								</div>
+
+								<h3>
+									<a href="https://www.essa-dakar.com/course/details/9">Mentorat</a>
+								</h3>
+								<p>Chaque semaine, un expert du métier visé suit vos progrès</p>
+								<div class="trainer d-flex justify-content-between align-items-center">
+									<div class="trainer-profile d-flex align-items-center">
+
+										<span>ESSA</span>
+									</div>
+									<div class="trainer-rank d-flex align-items-center">
+										<i class="bx bxs-graduation bx-md"></i>&nbsp;
+											                    &nbsp;&nbsp;
+										<i class="bx bxs-edit-alt bx-md"></i>&nbsp;
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End Course Item-->
+
+
+					<div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+						<div class="course-item">
+							<img src="https://openclassrooms.com/modules/sdzv4-main/latest/images/job-3fcee049630fd874e724.svg" class="img-fluid" alt="..." style="width:380px;height:250px;">
+							<div class="course-content">
+								<div class="d-flex justify-content-between align-items-center mb-3">
+									<h4 class="get-started-btn">Doctorat</h4>
+								</div>
+
+								<h3>
+									<a href="https://www.essa-dakar.com/course/details/4">Embauché ou remboursé</a>
+								</h3>
+								<p>Vous trouvez un emploi sous 6 mois ou nous remboursons vos frais de scolarité*</p>
+								<div class="trainer d-flex justify-content-between align-items-center">
+									<div class="trainer-profile d-flex align-items-center">
+
+										<span>ESSA</span>
+									</div>
+									<div class="trainer-rank d-flex align-items-center">
+										<i class="bx bxs-graduation bx-md"></i>&nbsp;
+											                    &nbsp;&nbsp;
+										<i class="bx bxs-edit-alt bx-md"></i>&nbsp;
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End Course Item-->
+
+
+				</div>
+
+			</div>
+		</section>
+		<!-- End Popular Courses Section -->
+
+
+
+		<!-- ======= Popular Courses Section ======= -->
+		<section id="popular-courses" class="courses">
+			<div class="container" data-aos="fade-up">
+				<div class="section-title">
+					<h2>Cours</h2>
+					<p>Les plus demandés</p>
+				</div>
+				<div class="row" data-aos="zoom-in" data-aos-delay="100">
+
+					<div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+						<div class="course-item">
+							<img src="https://www.essa-dakar.com/image/course/1704016324424836.gif" class="img-fluid" alt="..." style="width:380px;height:250px;">
+							<div class="course-content">
+								<div class="d-flex justify-content-between align-items-center mb-3">
+									<h4 class="get-started-btn">Réseau</h4>
+								</div>
+
+								<h3>
+									<a href="https://www.essa-dakar.com/course/details/21">Développement d’applications Web et  Mobile</a>
+								</h3>
+								<p>Une application mobile est un logiciel applicatif développé pour un appareil électronique...</p>
+								<div class="trainer d-flex justify-content-between align-items-center">
+									<div class="trainer-profile d-flex align-items-center">
+
+										<span>ESSA</span>
+									</div>
+									<div class="trainer-rank d-flex align-items-center">
+										<i class="bx bxs-graduation bx-md"></i>&nbsp;
+											                    &nbsp;&nbsp;
+										<i class="bx bxs-edit-alt bx-md"></i>&nbsp;
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End Course Item-->
+
+
+					<div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+						<div class="course-item">
+							<img src="https://www.essa-dakar.com/image/course/1703822496103782.gif" class="img-fluid" alt="..." style="width:380px;height:250px;">
+							<div class="course-content">
+								<div class="d-flex justify-content-between align-items-center mb-3">
+									<h4 class="get-started-btn">Certifiant</h4>
+								</div>
+
+								<h3>
+									<a href="https://www.essa-dakar.com/course/details/9">Ethical Hacking</a>
+								</h3>
+								<p>Mise en place système de sécurité. Ethical Hacking, pen-testing...</p>
+								<div class="trainer d-flex justify-content-between align-items-center">
+									<div class="trainer-profile d-flex align-items-center">
+
+										<span>ESSA</span>
+									</div>
+									<div class="trainer-rank d-flex align-items-center">
+										<i class="bx bxs-graduation bx-md"></i>&nbsp;
+											                    &nbsp;&nbsp;
+										<i class="bx bxs-edit-alt bx-md"></i>&nbsp;
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End Course Item-->
+
+
+					<div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+						<div class="course-item">
+							<img src="https://www.essa-dakar.com/image/course/1703204973806449.gif" class="img-fluid" alt="..." style="width:380px;height:250px;">
+							<div class="course-content">
+								<div class="d-flex justify-content-between align-items-center mb-3">
+									<h4 class="get-started-btn">Securité</h4>
+								</div>
+
+								<h3>
+									<a href="https://www.essa-dakar.com/course/details/4">Cyber Sécurité</a>
+								</h3>
+								<p>Mise en place système de sécurité. Ethical Hacking, pen-testing...</p>
+								<div class="trainer d-flex justify-content-between align-items-center">
+									<div class="trainer-profile d-flex align-items-center">
+
+										<span>ESSA</span>
+									</div>
+									<div class="trainer-rank d-flex align-items-center">
+										<i class="bx bxs-graduation bx-md"></i>&nbsp;
+											                    &nbsp;&nbsp;
+										<i class="bx bxs-edit-alt bx-md"></i>&nbsp;
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End Course Item-->
+
+
+				</div>
+
+			</div>
+		</section>
+		<!-- End Popular Courses Section -->
+		
+	<!-- ======= Contact Section ======= -->
+	<section id="contact" class="contact">
+		<div class="breadcrumbs" data-aos="fade-in">
+			<div class="container center">
+				<h2>Contactez-Nous</h2>
+				<p></p>
+			</div>
+		</div>
+		<div data-aos="fade-up">
+			<iframe style="border:0; width: 100%; height: 350px;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3858.909071216051!2d-17.46971558564141!3d14.71773258972797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xec172a38aa82f87%3A0xc1062c0b3fa2568c!2sEcole%20Sup%C3%A9rieure%20des%20Sciences%20Appliqu%C3%A9es%20(ESSA)!5e0!3m2!1sfr!2ssn!4v1617269057271!5m2!1sfr!2ssn" frameborder="0" allowfullscreen></iframe>
+		</div>
+		<div class="container" data-aos="fade-up">
+
+			<div class="row mt-5">
+
+				<div class="col-lg-4">
+					<div class="info">
+						<div class="address">
+							<i class="bi bi-geo-alt"></i>
+							<h4>Adresse:</h4>
+							<p>Sacré coeur 3</p>
+						</div>
+
+						<div class="email">
+							<i class="bi bi-envelope"></i>
+							<h4>Email:</h4>
+							<p>
+								<a href="mailto:essa-dakar@gmail.com" style="color:black;">essa-dakar@gmail.com</a>
+							</p>
+						</div>
+
+						<div class="phone">
+							<i class="bi bi-phone"></i>
+							<h4>Telephone:</h4>
+							<p>
+								<a href="callto:+221 761689548" style="color:black;">+221 761689548</a>
+							</p>
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="col-lg-8 mt-5 mt-lg-0">
+
+					<form action="https://www.essa-dakar.com/contact/form" method="post">
+						<input type="hidden" name="_token" value="RgBNB8HI4um6Owm4n3RUoWtfuRoZnG5hQcnwK99s">
+						<div class="row">
+							<div class="col-md-6 form-group">
+								<input type="text" name="name" class="form-control" id="name" placeholder="Entrez nom complet" required>
+							</div>
+							<div class="col-md-6 form-group mt-3 mt-md-0">
+								<input type="email" class="form-control" name="email" id="email" placeholder="Entrez Nom Email" required>
+							</div>
+						</div>
+						<div class="form-group mt-3">
+							<input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+						</div>
+						<div class="form-group mt-3">
+							<textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+						</div>
+						<br>
+						<div class="text-center">
+							<button type="submit" class="btn btn-primary">Envoyer Message</button>
+						</div>
+					</form>
+
+				</div>
+
+			</div>
+
+		</div>
+	</section>
+	<!-- End Contact Section -->
+
+</main>
+<!-- End #main -->{% endblock %}
+

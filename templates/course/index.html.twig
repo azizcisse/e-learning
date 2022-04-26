@@ -1,0 +1,56 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Nos Formations{% endblock %}
+
+{% block body %}
+
+    <main id="main">
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about">
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Nos Formations</h2>
+                    <!-- <p>Qui somme nous?</p>-->
+                </div>
+
+                <div class="row" data-aos="zoom-in" data-aos-delay="100">
+
+                    {% for course in courses %}
+{#                        <h4>{{ course }}</h4>#}
+
+                    <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
+                        <div class="course-item">
+                            <img src="https://openclassrooms.com/modules/sdzv4-main/latest/images/diploma-c44a382d27bb13c21424.svg" class="img-fluid" alt="..." style="width:380px;height:250px;">
+                            <div class="course-content">
+                                <div class="d-flex justify-content-between align-items-center mb-3">
+                                    <h4 class="get-started-btn">{{ course.date }}</h4>
+                                </div>
+
+                                <h3>
+                                    <a href="/single-course/{{ course.id }}">{{ course.titre }}</a>
+                                </h3>
+                                <p>{{ course.description }}</p>
+                                <div class="trainer d-flex justify-content-between align-items-center">
+                                    <div class="trainer-profile d-flex align-items-center">
+
+                                        <span>ESSA</span>
+                                    </div>
+                                    <div class="trainer-rank d-flex align-items-center">
+                                        <i class="bx bxs-graduation bx-md"></i>&nbsp;
+                                        &nbsp;&nbsp;
+                                        <i class="bx bxs-edit-alt bx-md"></i>&nbsp;
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Course Item-->
+                    {% endfor %}
+            </div>
+
+            </div>
+        </section>
+        <!-- End About Section -->
+
+    </main>
+{% endblock %}

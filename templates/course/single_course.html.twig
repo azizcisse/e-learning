@@ -1,0 +1,42 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}{{ course.titre }}{% endblock %}
+
+{% block body %}
+    <main id="main">
+        <!-- ======= About Section ======= -->
+        <section id="about" class="about">
+            <div class="container" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>{{ course.titre }}</h2>
+                    <!-- <p>Qui somme nous?</p>-->
+                </div>
+
+                <div class="row" style="background-color:white; border-radius: 5px;box-shadow: 0px 4px 17px rgba(0, 0, 0, 0.1);">
+                    <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+                        <img src="https://www.essa-dakar.com/image/about/1700229816762740" class="img-fluid rounded " alt="">
+                    </div>
+                    <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+                        <h3 style="text-align:center;">{{ course.titre }}</h3>
+
+                        <ul>
+                            <li>
+                                <i class="bi bi-check-circle"></i>
+                                {{ course.description }}</li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <i class="bi bi-check-circle"></i>
+                                {{ course.contenu }}</li>
+                        </ul>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </section>
+        <!-- End About Section -->
+
+    </main>
+{% endblock %}
